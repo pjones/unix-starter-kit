@@ -1,0 +1,32 @@
+! ############################################################################
+! # Emacs
+Emacs.font: -unknown-DejaVu Sans Mono-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1
+
+! ############################################################################
+! # URxvt terminal
+URxvt.font: xft:dejavu sans mono:size=10
+URxvt.modifer: alt
+URxvt.meta8: false
+URxvt.scrollBar: false
+URxvt.internalBorder: 4
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: true
+URxvt.pointerBlank: true
+URxvt.background: #222222
+URxvt.foreground: #e6e6e6
+URxvt.color0: #111111
+URxvt.color1: #dc322f
+URxvt.color2: #859900
+URxvt.color3: #b58900
+URxvt.color4: #268bd2
+URxvt.color5: #d33682
+URxvt.color6: #2aa198
+URxvt.color7: #839496
+URxvt.color8: #1c1c1c
+URxvt.color9: #d75f00
+URxvt.color10: #85aa11
+URxvt.color11: #b68a01
+URxvt.color12: #0188ff
+URxvt.color13: #5f5faf
+URxvt.color14: #2ba299
+URxvt.color15: #ffffd7
