@@ -32,5 +32,9 @@
       uniquify-buffer-name-style 'forward
       diff-switches "-u")
 
+;; Color theme
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'devalot t)
+
 ;; Load all USK lisp files
 (mapc 'load (directory-files usk-lisp-dir t "^[^#].*el$"))

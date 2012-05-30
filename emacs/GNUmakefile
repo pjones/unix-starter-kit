@@ -2,11 +2,14 @@
 include ../mk/install.mk
 
 ##############################################################################
-EL_FILES = $(shell ls *.el|grep -v emacsrc)
-EL_DEST  = $(HOME)/.emacs.d/usk
+LIB_FILES = $(wildcard lib/*.el)
+LIB_DEST  = $(HOME)/.emacs.d/usk
+$(foreach f,$(LIB_FILES),$(eval $(call INSTALL_FILE_TO,$(f),$(LIB_DEST))))
 
 ##############################################################################
-$(foreach f,$(EL_FILES),$(eval $(call INSTALL_FILE_TO,$(f),$(EL_DEST))))
+THEME_FILES = $(wildcard themes/*.el)
+THEME_DEST  = $(HOME)/.emacs.d/themes
+$(foreach f,$(THEME_FILES),$(eval $(call INSTALL_FILE_TO,$(f),$(THEME_DEST))))
 
 ##############################################################################
 install: $(HOME)/.emacs
