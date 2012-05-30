@@ -12,6 +12,11 @@ THEME_DEST  = $(HOME)/.emacs.d/themes
 $(foreach f,$(THEME_FILES),$(eval $(call INSTALL_FILE_TO,$(f),$(THEME_DEST))))
 
 ##############################################################################
+install: $(HOME)/.emacs.d/rhtml
+$(HOME)/.emacs.d/rhtml: rhtml
+	cp -pr $< $@
+
+##############################################################################
 install: $(HOME)/.emacs
 $(HOME)/.emacs: emacsrc.el
 	$(INSTALL_PLAIN_FILE) $< $@
