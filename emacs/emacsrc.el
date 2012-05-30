@@ -30,7 +30,11 @@
       shift-select-mode nil
       mouse-yank-at-point t
       uniquify-buffer-name-style 'forward
+      echo-keystrokes 0.1
       diff-switches "-u")
+
+;; Put the scroll bar on the right where people expect it
+(set-scroll-bar-mode 'right)
 
 ;; Color theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
