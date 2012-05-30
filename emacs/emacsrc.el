@@ -33,8 +33,13 @@
       echo-keystrokes 0.1
       diff-switches "-u")
 
-;; Put the scroll bar on the right where people expect it
+;; Put the scroll bar on the right where people expect it, and also
+;; use window fringes.n
 (set-scroll-bar-mode 'right)
+(require 'fringe)
+(fringe-mode 10)
+(setq-default indicate-buffer-boundaries 'left
+              indicate-empty-lines t)
 
 ;; Color theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
