@@ -17,7 +17,7 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(ido-ubiquitous magit flymake-ruby)
+(defvar my-packages '(magit flymake-ruby)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)

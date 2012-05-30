@@ -13,7 +13,7 @@
       whitespace-action '(auto-cleanup))
 
 ;; Tabs and spaces
-(setq-default 'indent-tabs-mode nil)
+(set-default 'indent-tabs-mode nil)
 
 ;; Newlines
 (set-default 'require-final-newline t)
