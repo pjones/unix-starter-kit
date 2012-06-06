@@ -41,6 +41,11 @@
 (setq-default indicate-buffer-boundaries 'left
               indicate-empty-lines t)
 
+;; Turn off the menu bar in text mode, but leave it on in the GUI.
+(setq window-system-default-frame-alist
+      '((x (menu-bar-lines . 1) (tool-bar-lines . 1))
+        (nil (menu-bar-lines . 0) (tool-bar-lines . 0))))
+
 ;; Color theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'devalot t)

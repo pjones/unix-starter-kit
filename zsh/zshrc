@@ -28,6 +28,6 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 
 alias e="emacsclient -nq"
-export EDITOR="emacsclient -t"
+export EDITOR="emacsclient -t -a emacs"
 
 source $ZSH/oh-my-zsh.sh
