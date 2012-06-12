@@ -20,4 +20,4 @@ $(HOME)/.emacs.d/rhtml: rhtml
 install: $(HOME)/.emacs
 $(HOME)/.emacs: emacsrc.el
 	$(INSTALL_PLAIN_FILE) $< $@
-	emacs -nw -f kill-emacs # load all packages
+	emacs --batch --script ~/.emacs > /dev/null 2>&1
