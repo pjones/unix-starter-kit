@@ -207,6 +207,11 @@
    `(font-latex-sectioning-4-face ((t (:inherit 'font-latex-sectioning-0-face))))
    `(font-latex-sectioning-5-face ((t (:inherit 'font-latex-sectioning-0-face))))
 
+   ;; Whitespace Mode
+   `(whitespace-tab ((t (:background ,bg-low))))
+   `(whitespace-trailing ((t (:inherit 'default))))
+   `(whitespace-line ((t (:background ,bg-low))))
+
    ;; Non-Standard Faces
    `(devalot-fixme-face ((t (:background ,bg-inverse :foreground ,red :bold t :box (:line-width 1 :color ,bg-low)))))
 
