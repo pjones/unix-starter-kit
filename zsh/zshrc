@@ -27,7 +27,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
-alias e="emacsclient -nq"
+alias e="emacsclient -nq -a emacs"
 export EDITOR="emacsclient -t -a emacs"
 
 source $ZSH/oh-my-zsh.sh
