@@ -12,9 +12,10 @@ THEME_DEST  = $(HOME)/.emacs.d/themes
 $(foreach f,$(THEME_FILES),$(eval $(call INSTALL_FILE_TO,$(f),$(THEME_DEST))))
 
 ##############################################################################
-install: $(HOME)/.emacs.d/rhtml
-$(HOME)/.emacs.d/rhtml: rhtml
-	cp -pr $< $@
+install: $(HOME)/.emacs.d/rhtml/rhtml-mode.el
+$(HOME)/.emacs.d/rhtml/rhtml-mode.el: rhtml/rhtml-mode.el
+	mkdir -p `dirname $@`
+	cp -pr rhtml/*.el `dirname $@`
 
 ##############################################################################
 install: $(HOME)/.emacs
