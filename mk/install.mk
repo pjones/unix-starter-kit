@@ -9,17 +9,24 @@ install:
 ##############################################################################
 # $1: The file to install
 # $2: The destination name
+# $3: File mode (default 0644)
 define INSTALL_FILE_AS
 install: $(2)
 $(2): $(1)
 	@ mkdir -p $(dir $2)
-	$(INSTALL_PLAIN_FILE) $$< $$@
+	install -m $(if $(3),$(3),0644) $$< $$@
 endef
 
 ##############################################################################
 # $1: file to install as ~/.$(1)
 define INSTALL_DOT_FILE
 $(eval $(call INSTALL_FILE_AS,$(1),$(HOME)/.$(notdir $(1))))
+endef
+
+################################################################################
+# $1: file to install as ~/.$(1) with the exec bits set.
+define INSTALL_EXEC_DOT_FILE
+$(eval $(call INSTALL_FILE_AS,$(1),$(HOME)/.$(notdir $(1)),0755))
 endef
 
 ##############################################################################

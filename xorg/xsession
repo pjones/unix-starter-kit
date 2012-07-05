@@ -1,0 +1,5 @@
+#!/bin/sh
+x11vnc -bg -viewonly -forever
+killall emacs
+emacs --daemon
+exec gnome-session

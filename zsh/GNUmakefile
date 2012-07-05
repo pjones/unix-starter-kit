@@ -7,4 +7,5 @@ $(eval $(call INSTALL_DOT_FILE,zshrc))
 ##############################################################################
 install: $(HOME)/.oh-my-zsh
 $(HOME)/.oh-my-zsh: oh-my-zsh
+	rm -rf $@
 	cp -rp $< $@

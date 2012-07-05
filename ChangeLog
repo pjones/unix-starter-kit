@@ -1,0 +1,27 @@
+2012-07-05  Peter Jones  <pjones@pmade.com>
+
+	* Emacs: Update color theme, with improved colors for ERB,
+	whitespace, and error messages (flymake).
+
+	* Emacs: Change the frame title so it displays the full name of
+	the file that is currently being edited.
+
+	* Emacs: Add a message to the frame title when a buffer hasn't yet
+	been saved to a file.
+
+	* Emacs: Typing while text is selected (there is an active region)
+	will now replace the selection with whatever you type.
+
+	* Emacs: Add a major-mode for editing YAML files.
+
+	* Git: Ignore Emacs temporary auto-save files so they don't get
+	added when you do a `git add .'
+
+	* ZSH: Auto-correction is now case-sensitive and won't try to help
+	you pick the correct case.
+
+	* ZSH: The `e' alias is now a function that tries really hard to
+	make sure there's a running Emacs to connect to.
+
+	* Linux Desktop: Automatically start an Emacs daemon when you
+	log-in.

@@ -21,9 +21,15 @@
 (add-to-list 'auto-mode-alist '("Rakefile$"   . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$"    . ruby-mode))
 (add-to-list 'auto-mode-alist '("Capfile$"    . ruby-mode))
+
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(autoload 'yaml-mode "yaml-mode" "YAML Mode" t)
+
+
 (add-hook 'ruby-mode-hook 'inf-ruby-keys)
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
 (add-hook 'ruby-mode-hook 'ruby-end-mode)
+(add-hook 'yaml-mode-hook 'usk-programming-mode-hook)
 
 ;; Ruby embedded in HTML
 (add-to-list 'load-path (concat user-emacs-directory "rhtml"))
