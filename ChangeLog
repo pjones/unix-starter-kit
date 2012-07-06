@@ -1,5 +1,7 @@
 2012-07-06  Peter Jones  <pjones@pmade.com>
 
+	* Version 0.2.0 released.
+
 	* Emacs: Configure dired to auto-revert its buffer when it is
 	visited after being hidden.  This should keep dired buffers
 	current with the file system.
