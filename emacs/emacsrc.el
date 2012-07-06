@@ -63,6 +63,9 @@
       frame-title-format '((:eval (pjones:frame-title-file-name))
                            (:eval (pjones:frame-title-not-saved))))
 
+(setq-default cursor-in-non-selected-windows 'hbar)
+(blink-cursor-mode)
+
 ;; Turn off the menu bar in text mode, but leave it on in the GUI.
 (setq window-system-default-frame-alist
       '((x (menu-bar-lines . 1) (tool-bar-lines . 1))
@@ -77,3 +80,4 @@
 
 ;; Load all USK lisp files
 (mapc 'load (directory-files usk-lisp-dir t "^[^#].*el$"))
+(add-hook 'after-make-frame-functions 'novice-maybe-enable)

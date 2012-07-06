@@ -1,3 +1,21 @@
+2012-07-06  Peter Jones  <pjones@pmade.com>
+
+	* Emacs: Configure dired to auto-revert its buffer when it is
+	visited after being hidden.  This should keep dired buffers
+	current with the file system.
+
+	* Emacs: Rebind C-w to do the same thing as the shell while
+	retaining the ability to kill the region.
+
+	* Emacs: Rebind C-o and M-o to do more sensible things with
+	indentation.
+
+	* Emacs: Change the text cursor to be a vertical blinking bar, and
+	the text cursor in inactive windows to a solid horizontal bar.
+
+	* Emacs: Create a new function called `novice' that removes tool
+	bars, menu bars, scroll bars, and activates ido-mode.
+
 2012-07-05  Peter Jones  <pjones@pmade.com>
 
 	* Emacs: Update color theme, with improved colors for ERB,
